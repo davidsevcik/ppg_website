@@ -1,0 +1,100 @@
+#pane #menu ul li:hover ul, #pane #menu ul li li:hover ul, #pane #menu ul li.sfhover ul, #pane #menu ul li li.sfhover ul {
+	/*top: 304px;
+	margin: 0 0 0 140px;*/
+}
+#pane #menu {
+    left: -250px;
+}
+#ctyrka .uvod {
+	margin-right: 0;
+}
+#ctyrka #sloupec2 h2 {
+	margin-left: 5px;
+}
+#sloupec1 {
+	margin: 0 0 0 18px;
+	width: 320px;
+}
+#sloupec2 {
+	margin: 0 0 0 362px;
+	width: 320px;
+}
+#ctyrka #sloupec2 div {
+	width: 310px;
+}
+#ctyrka #sloupec1 div {
+	width: 310px;
+}
+img#recommended {
+	/*display: block;
+	float: right;
+	clear: right;
+	margin: 0 0 20px 489px;*/
+}
+#header {
+	/*margin: -15px 0 0 10px;*/
+}
+.post {
+	margin-right: 0;
+}
+.post #generictitle {
+	margin: 0;
+}
+.post .entry {
+	padding-right: 40px;
+}
+#topmenu ul {
+	left: 400px;
+}
+#nav li li a:link, #nav li li a:visited {
+	font-size: 85%;
+}
+#nav li ul {
+	width: 185px;
+}
+#hotels, #basket {
+	margin: 0 0 0 30px;
+}
+#hotels p, #hotels li {
+	padding-right: 40px;
+}
+#hotel iframe {
+	width: 673px;
+	margin: 0;
+	padding: 0;
+}
+.entry iframe {
+	width: 640px;
+	margin: 0;
+	padding: 0;
+}
+#searchtour #search, #searchtour .rounded, #searchtour #searchbottom {
+	position: relative;
+	top: -5px;
+}
+#searchtour #basicsearch .bottom, #searchtour #completelist .bottom {
+	position: relative;
+	top: -10px;
+}
+#searchtour #basicsearch {
+	margin-left: 15px;
+}
+#searchtour #completelist #break {
+	display: inline;
+}
+#searchtour #completelist .bottom {
+	margin-left: 5px;
+}
+#basket #unscheduled {
+	width: 650px;
+}
+#dlgoverlay {
+	display: none;
+}
+img#recommended {
+	/*margin: 0 0 20px 485px;*/
+}
+#pane #content {
+	/*position: relative;
+	top: -500px;*/
+}

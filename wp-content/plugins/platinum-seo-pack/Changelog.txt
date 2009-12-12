@@ -1,0 +1,58 @@
+2009-09-11 Rajesh (http://techblissonline.com/) - Version 1.2.8
+
+	* fixed a superficial bug related to function_exists that caused php errors.
+           platinum_seo_pack.php
+
+2009-08-30 Rajesh (http://techblissonline.com/) - Version 1.2.7
+
+	* added options to specify meta description and meta tags for Wordpress category and tag pages.
+           platinum_seo_pack.php
+
+2009-05-25 Rajesh (http://techblissonline.com/) - Version 1.2.6
+
+	* Corrected a minor problem with canonical link.
+           platinum_seo_pack.php
+
+2009-05-24 Rajesh (http://techblissonline.com/) - Version 1.2.5
+
+	* Corrected a minor characterset problem for an european language (Bulgarian).
+           platinum_seo_pack.php
+
+2009-05-18 Rajesh (http://techblissonline.com/) - Version 1.2.4
+
+	* Introduced Option to generate Canonical URLs.
+        * Introduced an Option to use tags as keywords for posts (Earlier tags were automatically included and now it is optional)        
+	  platinum_seo_pack.php
+
+2008-01-04 Rajesh (http://techblissonline.com/) - Version 1.2.3
+
+	* Introduced an option to noindex comments pages of posts, if the option to break comments into pages is chosen in Wordpress 2.7
+    * Automatically add nofollow tag to category links in breadcrumbs if the PSP options nofollow category listings on posts or nofollow category listings on pages  is chosen.	
+	  platinum_seo_pack.php
+	  
+2008-12-28 Rajesh (http://techblissonline.com/) - Version 1.2.2
+
+	* Updated for wordpress 2.7	
+	  platinum_seo_pack.php
+	  
+2008-10-12 Rajesh (http://techblissonline.com/) - Version 1.2.1
+
+	* Updated for providing an option to turn off  automatic 301 redirects while changing permalink structure 
+	(Refer http://techblissonline.com/wordpress-permalink-structure-plugin/)
+	
+	  platinum_seo_pack.php
+
+2008-08-17 Rajesh (http://techblissonline.com/)
+
+	* Updated for providing Nofollow option for archive listings
+	  platinum_seo_pack.php
+
+2008-07-17 Rajesh (http://techblissonline.com/)
+
+	* Updated for wordpress 2.6
+	  platinum_seo_pack.php
+
+2008-06-25 Rajesh (http://techblissonline.com/)
+
+	* Initial upload of plugin Platinum SEO Pack
+

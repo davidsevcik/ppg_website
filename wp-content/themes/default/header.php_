@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+
+<title><?php bloginfo('name'); ?> <?php if ( is_single() ) { ?> &raquo; Blog Archive <?php } ?> <?php wp_title(); ?></title>
+
+<meta name="generator" content="WordPress <?php bloginfo('version'); ?>" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
+<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/menu.js"></script>
+
+<style type="text/css" media="screen">
+
+</style>
+
+<!--[if IE 6]>
+<style type="text/css" media="screen">
+#pane #menu ul li:hover ul, #pane #menu ul li li:hover ul, #pane #menu ul li.sfhover ul, #pane #menu ul li li.sfhover ul {
+	top: 304px;
+	margin: 0 0 0 140px;
+}
+#ctyrka .uvod {
+	margin-right: 0;
+}
+#ctyrka #sloupec2 h2 {
+	margin-left: 5px;
+}
+#sloupec1 {
+	margin: 0 0 0 18px;
+	width: 320px;
+}
+#sloupec2 {
+	margin: 0 0 0 362px;
+	width: 320px;
+}
+#ctyrka #sloupec2 div {
+	height: 60px;
+	width: 310px;
+}
+#ctyrka #sloupec1 div {
+	height: 60px;
+	width: 310px;
+}
+#ctyrka h2 {
+	font-size: 125%;
+	height: 35px;
+}
+img#recommended {
+	display: block;
+	float: right;
+	clear: right;
+	margin: 0 0 20px 489px;
+}
+#header {
+	margin: -15px 0 0 10px;
+}
+.post {
+	margin-right: 0;
+}
+.post #generictitle {
+	margin: 0;
+}
+.post .entry {
+	padding-right: 40px;
+}
+#topmenu ul {
+	left: 400px;
+}
+#nav li li a:link, #nav li li a:visited {
+	font-size: 85%;
+}
+#nav li ul {
+	width: 185px;
+}
+#hotels, #basket {
+	margin: 0 0 0 30px;
+}
+#hotels p, #hotels li {
+	padding-right: 40px;
+}
+#hotel iframe {
+	width: 673px;
+	margin: 0;
+	padding: 0;
+}
+.entry iframe {
+	width: 640px;
+	margin: 0;
+	padding: 0;
+}
+#searchtour #search, #searchtour .rounded, #searchtour #searchbottom {
+	position: relative;
+	top: -5px;
+}
+#searchtour #basicsearch .bottom, #searchtour #completelist .bottom {
+	position: relative;
+	top: -10px;
+}
+#searchtour #basicsearch {
+	margin-left: 15px;
+}
+#searchtour #completelist #break {
+	display: inline;
+}
+#searchtour #completelist .bottom {
+	margin-left: 5px;
+}
+#basket #unscheduled {
+	width: 650px;
+}
+#dlgoverlay {
+	display: none;
+}
+img#recommended {
+	/*margin: 0 0 20px 485px;*/
+}
+#pane #content {
+	position: relative;
+	top: -500px;
+}
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css" media="screen">
+#searchtour #completelist .bottom  {
+	position: relative;
+	left: 5px;
+	/*border: 1px solid gray;*/
+}
+</style>
+<![endif]-->
+
+
+<?php wp_head(); ?>
+</head>
+<body>
+
+<div id="container">
+
+<div id="page">
+
+<div id="topmenu">
+	<span id="withyou">WITH YOU SINCE 1993</span>
+	<ul id="nav">
+		<li><a href="javascript:void(0)">Prague</a>
+			<ul>
+				<li><a href="<?php bloginfo('siteurl'); ?>/index.php/facts-essentials/">Facts & Essentials</a></li>
+				<li><a href="<?php bloginfo('siteurl'); ?>/index.php/getting-around-prague/">Getting Around</a></li>
+				<li><a href="<?php bloginfo('siteurl'); ?>/index.php/museums-galleries/">Museums & Galleries</a></li>
+				<li><a href="<?php bloginfo('siteurl'); ?>/index.php/what-to-see-in-prague/">What to see</a></li>
+				<li><a href="<?php bloginfo('siteurl'); ?>/index.php/czech-souvenirs-2/">Czech Souvenirs</a></li>
+			</ul>
+		</li>
+		<li><a href="javascript:void(0)">Czech Republic</a>
+			<ul>
+				<li><a href="<?php bloginfo('siteurl'); ?>/index.php/czech-republic-getting-started/">Getting Started</a></li>
+				<li><a href="<?php bloginfo('siteurl'); ?>/index.php/czech-republic-how-to-get-there/">How To Get There</a></li>
+				<li><a href="<?php bloginfo('siteurl'); ?>/index.php/czech-republic-facts-essentials/">Facts & Essentials</a></li>
+				<li><a href="<?php bloginfo('siteurl'); ?>/index.php/czech-republic-regular-events/">Regular Events</a></li>
+				<li><a href="<?php bloginfo('siteurl'); ?>/index.php/czech-republic-cuisine/">Czech Cuisine</a></li>
+			</ul>
+		</li>
+		<li><a <?php p_current_page('/index.php/frequently-asked-questions/'); ?> href="<?php bloginfo('siteurl'); ?>/index.php/frequently-asked-questions/">FAQ</a></li>
+		<li><a <?php p_current_page('/index.php/gallery/'); ?> href="<?php bloginfo('siteurl'); ?>/index.php/gallery/">Gallery</a></li>
+		<li class="last"><a <?php p_current_page('/index.php/useful-links/'); ?> href="<?php bloginfo('siteurl'); ?>/index.php/useful-links/">Useful Links</a></li>
+	</ul>
+</div>
+
+<div id="header">
+	<a href="http://private-walks.com/"></a>
+</div>
+
+<div id="pane">
+
+	<div id="menu">
+		<ul id="nav1">
+			<li><a <?php if($_SERVER['PHP_SELF'] == '/' || $_SERVER['PHP_SELF'] == '/index.php') echo 'class="current"' ?> href="<?php bloginfo('siteurl'); ?>/index.php">Home</a></li>
+			<li><a <?php p_current_page('/index.php/about-us/'); ?> href="<?php bloginfo('siteurl'); ?>/index.php/about-us/">About Us</a></li>
+			<li><a href="javascript:void(0)">Private Guided Tours</a>
+				<ul>
+					<li><a href="<?php bloginfo('siteurl'); ?>/index.php/search/">Book a Tour</a></li>
+					<li><a href="<?php bloginfo('siteurl'); ?>/index.php/our-private-guides/">Our Guides</a></li>
+					<li><a href="<?php bloginfo('siteurl'); ?>/index.php/price-info/">Price Info</a></li>
+				</ul>
+			</li>
+			<!--<li><a <?php p_current_page('/index.php/hotels/'); ?> href="<?php bloginfo('siteurl'); ?>/index.php/hotels/">Accommodation</a></li>-->
+			<li><a <?php p_current_page('/index.php/transportation/'); ?> href="<?php bloginfo('siteurl'); ?>/index.php/transportation/">Transportation</a></li>
+			<li><a <?php p_current_page('/index.php/tickets/'); ?> href="<?php bloginfo('siteurl'); ?>/index.php/tickets/">Theatre Tickets</a></li>
+			<!--<li>Restaurant Reservations</li>-->
+			<li><a <?php p_current_page('/index.php/references/'); ?> href="<?php bloginfo('siteurl'); ?>/index.php/references/">References</a></li>
+			<li><a <?php p_current_page('/index.php/contact-us/'); ?> href="<?php bloginfo('siteurl'); ?>/index.php/contact-us/">Contact Us</a></li>
+			<li><a <?php p_current_page('/index.php/who-do-we-support/'); ?> href="<?php bloginfo('siteurl'); ?>/index.php/who-do-we-support/">Who Do We Support</a></li>
+		</ul>
+		
+		<div style="text-align: center; margin-top: 15px">
+			<a href="<?php bloginfo('siteurl'); ?>/index.php/de/private-stadtfuhrungen-in-prague-tschechien/">
+				<img src="<?php bloginfo('template_url'); ?>/images/Germany.png" border="0" />
+			</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="<?php bloginfo('siteurl'); ?>/">
+				<img src="<?php bloginfo('template_url'); ?>/images/UnitedKingdom.png" border="0" />
+			</a>
+		</div>
+		
+		<div style="text-align: center; margin-top: 15px; padding: 0 10px 0 10px">
+			<a href="http://www.tripadvisor.com/"><img src="http://www.tripadvisor.com/img/triplogo162w.gif"
+			border="0" alt="TripAdvisor"></a><br />TripAdvisor: The web's best source for unbiased hotel reviews and travel information
+		</div>
+	</div>
+	
+	<div id="content">
+		<a href="http://www.fodors.com/" target="_blank"><img id="recommended" src="<?php bloginfo('template_url'); ?>/images/recommended.png"></img></a>
+		

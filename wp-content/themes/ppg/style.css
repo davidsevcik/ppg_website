@@ -1,0 +1,1601 @@
+/*  
+Theme Name: Private Prague Guide SEO Friendly
+Version: 0.1
+Author: David Sevcik
+*/
+
+
+.h {display: none;}
+.clear {clear: both;}
+
+span.clear { font-size: 1px; line-height: 1px; height: 1px; display: block; }
+
+
+/* Begin Typography & Colors */
+body {
+	font-size: 62.5%; /*62.5%;*/
+	font-family: Verdana, 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+	text-align: center;
+	}
+table { font-size: 1em; }
+
+#page {
+	border-left: 2px solid #f7f7f7;
+	border-right: 2px solid #f7f7f7;
+	background-color: #ffffff; /*#fefaeb;*/
+	background-image: url('images/obsah-prechod.png');
+	background-position: top;
+	background-repeat: repeat-x;
+	text-align: left;
+	}
+
+#header {
+	}
+
+#headerimg 	{ 
+	margin: 7px 9px 0; 
+	height: 192px; 
+	width: 740px; 
+	} 
+
+#content {
+	font-size: 1.2em;
+    padding-top: 50px;
+    position: relative;
+    line-height: 1.5em;
+ }
+
+.widecolumn .entry p {
+	font-size: 1.05em;
+	}
+
+.narrowcolumn .entry, .widecolumn .entry {
+	line-height: 1.4em;
+	}
+
+.widecolumn {
+	line-height: 1.6em;
+	}
+
+.narrowcolumn .postmetadata {
+	text-align: center;
+	}
+
+.alt {
+	background-color: #f8f8f8;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	}
+
+small {
+	font-family: Verdana, 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	}
+
+h1, h2, h3 {
+	font-family: Verdana, 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+	font-weight: bold;
+    line-height: 1.3em;
+}
+
+h4 { font-size: 1em; margin: 0; }
+
+h1 {
+    font-size: 4em;
+	text-align: center;
+ }
+
+#headerimg .description {
+	font-size: 1.2em;
+	text-align: center;
+	}
+
+h2 {
+	font-size: 1.6em;
+	}
+
+h2.pagetitle {
+	font-size: 1.6em;
+	}
+
+#sidebar h2 {
+	font-family: 'Lucida Grande', Verdana, Sans-Serif;
+	font-size: 1.2em;
+	}
+
+h3 {
+	font-size: 1.3em;
+	}
+
+h1, h1 a, h1 a:hover, h1 a:visited, #headerimg .description {
+	text-decoration: none;
+	color: white;
+	}
+
+h2, h2 a, h2 a:visited, h3, h3 a, h3 a:visited {
+	color: #333;
+	}
+
+h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a, h3 a:hover, h3 a:visited, #sidebar h2, #wp-calendar caption, cite {
+	text-decoration: none;
+	}
+
+.entry p a:visited {
+	color: #b85b5a;
+	}
+
+.commentlist li, #commentform input, #commentform textarea {
+	font: 0.9em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	}
+
+.commentlist li {
+	font-weight: bold;
+	}
+
+.commentlist cite, .commentlist cite a {
+	font-weight: bold;
+	font-style: normal;
+	font-size: 1.1em;
+	}
+
+.commentlist p {
+	font-weight: normal;
+	line-height: 1.5em;
+	text-transform: none;
+	}
+
+#commentform p {
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	}
+
+.commentmetadata {
+	font-weight: normal;
+	}
+
+#sidebar {
+	font: 1em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	}
+
+small, #sidebar ul ul li, #sidebar ul ol li, .nocomments, .postmetadata, blockquote, strike {
+	color: #777;
+	}
+
+code {
+	font: 1.1em 'Courier New', Courier, Fixed;
+	}
+
+acronym, abbr, span.caps
+{
+	font-size: 0.9em;
+	letter-spacing: .07em;
+	}
+
+a, h2 a:hover, h3 a:hover {
+	color: #06c;
+	}
+
+a:hover {
+	color: #147;
+	text-decoration: underline;
+	}
+
+#orderbuttons a {
+    text-decoration: none;
+}
+
+#wp-calendar #prev a, #wp-calendar #next a {
+	font-size: 9pt;
+	}
+
+#wp-calendar a {
+	text-decoration: none;
+	}
+
+#wp-calendar caption {
+	font: bold 1.3em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	text-align: center;
+	}
+
+#wp-calendar th {
+	font-style: normal;
+	text-transform: capitalize;
+	}
+/* End Typography & Colors */
+
+
+
+/* Begin Structure */
+body {
+	margin: 0;
+	padding: 0; 
+	background-image: url('images/pozadi.png');
+	background-repeat: repeat;
+	}
+
+#container {
+	width: 100%;
+	margin: 0;
+	background-image: url('images/pozadi-prechod.png');
+	background-position: top;
+	background-repeat: repeat-x;
+}
+
+#page {
+	margin: 0 auto;
+	padding: 193px 0 0 0;
+	width: 961px;
+    position: relative;
+}
+
+#topmenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+	height: 32px;
+	width: 941px;
+	background-image: url('images/topmenu.gif');
+	background-position: top;
+	background-repeat: no-repeat;
+	margin: 0 0 0 10px;
+	padding: 0;
+    z-index: 2;
+}
+
+#topmenu #withyou {
+	position: relative;
+	left: 37px;
+	top: 7px;
+	font-size: 140%;
+	color: #8d8d8d;
+}
+
+#topmenu ul {
+	position: relative;
+	left: 402px;
+	top: -19px;
+	font-weight: bold;
+	color: white;
+	font-size: 120%;
+	height: 32px;
+	margin: 0;
+	padding: 0;
+	width: 550px;
+}
+
+#topmenu ul li {
+	list-style-type: none;
+	float: left;
+	background-image: url('images/delitko.gif');
+	background-position: right;
+	background-repeat: no-repeat;
+	height: 32px;
+	margin: 0;
+	padding: 0;
+}
+
+#topmenu ul li.last {
+	background-image: none;
+}
+
+#topmenu a:link, #topmenu a:visited {
+	color: white;
+	margin: 9px 20px 0 20px;
+}
+#topmenu a.current:link, #topmenu a.current:visited {
+	margin: 9px 20px 0 20px;
+	color: #edc329;
+	text-decoration: underline;
+}
+#topmenu a.current:hover {
+	margin: 9px 20px 0 20px;
+	color: white;
+	text-decoration: underline;
+}
+
+#nav a {
+	display: block;
+	color: black;
+	text-decoration: none;
+	padding: 0 3px 10px 0;
+	z-index: 1000;
+}
+#nav li ul {
+	position: absolute;
+	background: #edc329;
+	width: 165px;
+	left: -999em;
+	padding: 0;
+	margin: 0;
+	z-index: 1000;
+}
+#nav li li {
+	border-right: 0px;
+	background: #edc329;
+	padding: 0;
+	margin: 0;
+	height: 25px;
+	width: 165px;
+}
+#nav li li a:link, #nav li li a:visited {
+	display: block;
+	text-align: left;
+	color: black;
+	padding: 4px 5px 0 8px;
+	margin: 0;
+	z-index: 1000;
+	font-size: 85%;
+}
+#nav li li a:hover {
+	color: black;
+	z-index: 1000;
+	text-decoration: underline;
+	}
+#nav li:hover ul, #nav li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul { /* lists nested under hovered list items */
+	left: auto;
+	z-index: 1000;
+	top: 32px;
+	padding: 0;
+	margin: 0;
+}
+
+#header {
+	width: 952px;
+	height: 158px;
+	background-image: url('images/header.jpg');
+	background-position: top;
+	background-repeat: no-repeat;
+	margin: 3px 0 0 10px;
+	padding: 0;
+    position: absolute;
+    top: 32px;
+    left: 0;
+}
+#sitetitle { margin: 0; overflow: hidden; width: 230px; 	height: 150px; position: relative; top: 10px; left: 5px; }
+#header a {
+	display: block;
+	width: 230px;
+	height: 150px;
+	line-height: 1000em;
+}
+
+#pane {
+	margin: 0;
+    position: relative;
+}
+
+#pane #menu {
+	position: absolute;
+    top: 0;
+    left: 0;
+	width: 250px;
+	height: 500px;
+	background-image: url('images/stin.png');
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+
+#pane #menu ul {
+	margin: 45px 0 0 28px;
+	padding: 0;
+}
+
+#pane #menu ul li {
+	background-image: url('images/menu-pozadi.gif');	
+	background-repeat: no-repeat;
+	list-style-type: none;
+	width: 188px;
+	height: 31px;
+	margin: 0;
+	padding: 4px 0 0 20px;
+	font-size: 130%;
+}
+
+#menu a:link, #menu a:visited {
+	color: #195b8d;
+}
+#menu a.current:link, #menu a.current:visited, #menu a.current:hover {
+	color: #daaa02;
+	text-decoration: underline;
+}
+
+#nav1 a {
+	display: block;
+	color: black;
+	text-decoration: none;
+	padding: 0 3px 10px 0;
+	z-index: 1000;
+}
+#nav1 li ul {
+	position: absolute;
+	background: #195b8d;
+	width: 130px;
+	left: -999em;
+	padding: 0;
+	margin: 0;
+	z-index: 1000;
+    top: 0px;
+}
+#pane #menu ul li li {
+	background-image: none;
+	background: #195b8d;
+	padding: 0;
+	margin: 0;
+	height: 25px;
+	width: 130px;
+}
+#nav1 li li a:link, #nav1 li li a:visited {
+	display: block;
+	text-align: left;
+	color: white;
+	padding: 4px 5px 0 8px;
+	margin: 0;
+	z-index: 1000;
+	font-size: 80%;
+}
+#nav1 li li a:hover {
+	color: #edc530;
+	z-index: 1000;
+	text-decoration: underline;
+	}
+#pane #menu ul li:hover ul, #pane #menu ul li li:hover ul, #pane #menu ul li.sfhover ul, #pane #menu ul li li.sfhover ul { /* lists nested under hovered list items */
+	/*position: relative;*/
+	left: auto;
+	z-index: 1000;
+	top: 302px;
+	padding: 0;
+	margin: 0 0 0 145px;
+}
+
+#pane #content {
+	margin-left: 250px;
+	width: 710px;
+	background-image: url('images/text-prechod.png');
+	background-position: top;
+	background-repeat: repeat-x;
+    min-height: 89em;
+    *min-height: 91em;
+	_height: 91em;
+}
+
+#intro {
+	background-image: url('images/intro.jpg');
+	background-position: top;
+	background-repeat: no-repeat;
+	width: 651px;
+	height: 200px;
+	margin-left: 30px;
+}
+#intro h2 {
+	margin-top: 0;
+	padding: 20px 30px 0 0;
+    text-align: center;
+	 color:#333333;
+	 font-size:1.6em;
+}
+
+#czech #intro div { margin-top: 7px }
+#czech #content h4 { color:#DAAA02 }
+#czech #intro p { margin: 0; }
+#czech #intro p.recommend { margin-bottom: 5px; }
+#czech #intro h1 {
+  margin: 0 0 0 24px !important;
+  padding: 17px 30px 0 0 !important;
+  color:#333333 !important;
+  font-size:1.6em !important;
+}
+
+#intro h2 .white {
+	color: white;
+}
+#intro div {
+	margin: -7px 225px 0 25px;
+	text-align: justify;
+    line-height: 1.5em;
+}
+
+#ctyrka {
+	margin-top: 30px;
+}
+#ctyrka .uvod {
+	margin-right: 20px;
+    height: 20em;
+}
+#ctyrka h2 {
+	color: #daaa02;
+	font-size: 130%;
+	margin: 0 0 7px 0;
+	text-align: bottom;
+	height: 2.3em;
+}
+#ctyrka #sloupec2 h2 {
+	margin-left: 5px;
+}
+#ctyrka #sloupec2 div {
+	margin-left: 3px;
+	/*height: 225px;*/
+}
+#ctyrka #sloupec1 div {
+	/*height: 225px;*/
+}
+#ctyrka #sloupec2 div div {
+	margin-left: 3px;
+}
+#ctyrka .uvod div {
+	margin-top: 13px;
+}
+#ctyrka .uvod img {
+	position: relative;
+	left: -2px;
+	top: 3px;
+}
+#sloupec1 {
+	margin: 0 0 0 30px;
+	background-image: url('images/predel.gif');
+	background-position: right;
+	background-repeat: no-repeat;
+	height: 37em;
+	width: 325px;
+	float: left;
+}
+#sloupec2 {
+	height: 37em;
+	width: 325px;	
+	margin: 0 0 0 370px;
+}
+
+#news {
+	margin: 35px 0 0 30px;
+	width: 655px;
+}
+#news h2 {
+	margin-top: 0;
+	font-size: 200%;
+	color: #daaa02;
+}
+#news hr {
+	height: 2px;
+	color: #d1cbc6;
+	background-color: #d1cbc6;
+	display: block;
+	border-top: 1px solid #d1cbc6;
+	border-bottom: 1px solid white;
+	border-left: 1px solid #edebe9;
+	margin: 12px 0 12px 0;
+}
+#news small.date {
+	font-size: 110%;
+}
+#news .post {
+	margin-left: 0;
+}
+#news .post h2 {
+	font-size: 130%;
+}
+#news .post h2 a:link, #news .post h2 a:visited {
+	color: #195b8d;
+}
+
+#tourdetails {
+	margin-bottom: 20px;
+}
+#content h1, #tourslist h2 {
+	font-size: 170%;
+	color: #daaa02;
+	margin: 15px 0 20px 30px;
+	text-align: left;
+	padding: 0;
+}
+#generictitle {
+	background-image: url('images/tours-title.png');
+	background-position: top left;
+	background-repeat: no-repeat;
+	width: 651px;
+	height: 53px;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+	color: white !important;
+	padding: 15px 0 0 20px !important;
+	font-size: 180%;
+    line-height: 1.2em;
+}
+#tourdetails #generictitle, #tourslist #generictitle, #tickets #generictitle, #faq #generictitle { margin-left: 30px; }
+#tourslist h2 {
+    margin: 20px 0 20px 30px;
+}
+#tourdetails table {
+	margin: 5px 0 0 30px;
+	border-collapse: collapse;
+	width: 651px;
+}
+#tourdetails table tr {
+	margin: 0;
+	padding: 0;
+}
+#tourdetails table td {
+	border: 1px solid #d1cbc6;
+	padding: 8px 8px 8px 10px;
+	margin: 0;
+	vertical-align: top;
+	background-color: white; /*#f8f7f6;*/
+}
+#tourdetails table td p {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+#tourdetails table td.title {
+	color: #195b8d;
+	font-weight: bold;
+	background-color: #F8F0D2; /*#F4E198; #ede6d3;*/
+	width: 170px;
+}
+#tourdetails #notes {
+	background-color: white; /*#edebe9;*/
+	padding-left: 60px;
+	/*padding-left: 192px;*/
+	font-size: 90%;
+	color: #888683;
+	padding-right: 0;
+}
+#tourdetails #notes .note {
+	display: -moz-inline-box;
+	display: inline-block;
+	width: 29px;
+	margin-top: 1px;
+}
+#tourdetails .thead {
+	background-color: #f8f7f6;
+	font-weight: bold;
+}
+#tourdetails .thead .title {
+	color: #195b8d;
+	display: block;
+}
+#tourdetails .fees {
+	vertical-align: middle;
+}
+#tourdetails .price {
+	font-size: 92%;
+}
+#tourdetails .normal {
+	font-weight: normal;
+}
+#tourdetails #photos {
+	margin: 20px 0 20px 30px;
+}
+#tourdetails #photos img {
+	border: 2px solid white;
+	margin-right: 15px;
+}
+#tourdetails #orderbuttons, #searchtour #searchbuttons, #basket #orderbuttons, #tickets #orderbuttons {
+	margin: 25px 0 0 30px;
+	height: 60px;
+}
+#tourdetails .title up, #tourdetails .thead up {
+	font-size: 80%;
+}
+
+#basket #orderbuttons, #tickets #orderbuttons {
+	margin: 25px 0 0 0;
+	height: 60px;
+}
+#tourdetails #orderbuttons a, #basket #orderbuttons a, #tickets #orderbuttons a {
+	display: block;
+	float: left;
+	width: 205px;
+	height: 56px;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 15px;
+	margin-right: 15px;
+	background-image: url('images/empty-button.png');
+	background-position: top;
+	background-repeat: no-repeat;
+}
+#tourdetails #orderbuttons a:hover, #searchtour #searchbuttons a:hover, #basket #orderbuttons a:hover, #tickets #orderbuttons a:hover {
+	text-decoration: none;
+}
+#tourdetails #orderbuttons a small, #searchtour #searchbuttons a small, #basket #orderbuttons a small {
+	color: #195b8d;
+}
+#basket #orderbuttons a.centered, #tourdetails #orderbuttons a.centered, #tickets #orderbuttons a.centered {
+	padding-top: 23px;
+}
+#tourdetails #backlink {
+	clear: both;
+	margin: 30px 0 20px 30px;
+}
+
+#searchtour #basicsearch {
+	float: left;
+	margin-left: 30px;
+}
+#searchtour #ruler {
+	float: left;
+	width: 38px;
+	height: 170px;
+	margin: 0;
+}
+#searchtour .rounded {
+	padding: 10px 20px 10px 20px;
+	width: 266px;
+	height: 170px;
+	background-color: #F8F0D2; /*#ECE6D3; #ededed;*/
+}
+#searchtour #completelist {
+	margin-left: 368px;
+}
+#searchtour #completelist #break {
+	display: none;
+}
+#searchtour #basicsearch .top, #searchtour #completelist .top {
+	background-image: url('images/search-small-top.gif');
+	background-position: top;
+	background-repeat: no-repeat;
+	height: 9px;
+	width: 306px;
+}
+#searchtour #basicsearch .bottom, #searchtour #completelist .bottom {
+	background-image: url('images/search-small-bottom.gif');
+	background-position: top;
+	background-repeat: no-repeat;
+	height: 9px;
+	width: 306px;
+}
+
+#searchtour #search {
+	margin: 0 0 0 30px;
+	width: 605px;
+	background-color: #F8F0D2; /*#ece6d3;*/
+	padding: 15px 20px 20px 20px;
+}
+#searchtour #searchtop {
+	margin: 0 0 0 30px;
+	background-image: url('images/search-top.gif');
+	background-position: top;
+	background-repeat: no-repeat;
+	height: 9px;
+	width: 645px;
+}
+#searchtour #searchbottom {
+	margin: 0 0 0 30px;
+	background-image: url('images/search-bottom.gif');
+	background-position: top;
+	background-repeat: no-repeat;
+	height: 8px;
+	width: 645px;
+}
+
+.infobox {
+	margin: 0 0 0 30px;
+	width: 605px;
+	background-color: #F8F0D2; /*#ece6d3;*/
+	padding: 15px 20px 1px 20px;
+}
+.infobox-top {
+	margin: 0 0 0 30px;
+	background-image: url('images/search-top.gif');
+	background-position: top;
+	background-repeat: no-repeat;
+	height: 9px;
+	width: 645px;
+}
+.infobox-bottom {
+	margin: 0 0 0 30px;
+	background-image: url('images/search-bottom.gif');
+	background-position: top;
+	background-repeat: no-repeat;
+	height: 8px;
+	width: 645px;
+}
+.infobox p {
+    margin: 0 0 1em 0;
+}
+
+#searchtour #links {
+	margin: 20px 0 0 30px;
+
+}
+#searchtour ul {
+	margin: 0 0 30px 10px;
+	width: 630px;
+}
+#searchtour table {
+	width: 100%;
+}
+#searchtour h4 {
+	color: #daaa02;
+	margin-bottom: 5px;
+}
+#searchtour .choices {
+	margin-bottom: 25px;
+}
+#searchtour h3 {
+	color: #195b8d;
+	margin-top: 0;
+}
+#searchtour .button {
+	display: block;
+	width: 205px;
+	height: 56px;
+	text-align: center;
+	color: #154972;
+	text-decoration: none;
+	font-weight: bold;
+	padding-top: 24px;
+	margin-right: 15px;
+	background-image: url('images/empty-button.png');
+	background-position: top;
+	background-repeat: no-repeat;
+}
+#searchtour p.top {
+	margin-left: 30px;
+	width: 630px;
+}
+#searchtour p.last {
+	margin-bottom: 20px;
+}
+
+#tourslist #list {
+	margin-left: 30px;
+}
+#tourslist .tour {
+	margin: 0 0 30px 0;
+	width: 640px;
+    clear: left;
+}
+#tourslist .tour h2 {
+	margin: 5px 0 10px 0;
+    padding-top: 5px;
+	font-size: 1.3em;
+}
+#tourslist h1 {
+    margin-top: 1em;
+}
+#tourslist .tour h2 a {
+	color: #195b8d;
+}
+#tourslist .addtobasket a {
+	font-size: 80%;
+}
+#tourslist .tour h2 a:hover {
+	text-decoration: underline;
+}
+#tourslist .description {
+	margin: 0 0 5px 167px;
+}
+#tourslist .addtobasket {
+	float: right;
+}
+#tourslist #pagecounter #next, #tourslist #pagecounter #back {
+	margin-left: 15px;
+}
+#tourslist #pagecounter {
+	margin: 0 0 20px 0;
+    clear: both;
+	text-align: center;
+    font-weight: bold;
+}
+#tourslist .location {
+	color: #676767;
+    margin-left: 167px;
+}
+#tourslist #links {
+	clear: both;
+	margin: 40px 15px 0 30px;
+    border-top: #676767 solid 1px;
+    padding: 10px 10px 0 10px;
+}
+.tour { clear: left; }
+.tour .photo {
+    width: 150px;
+    height: 140px;
+    border: #d0d0d0 solid 1px;
+    overflow: hidden;
+    float: left;
+    margin: 0 15px 20px 0;
+    text-align: center;
+}
+.tour .photo img {
+    margin: 0 auto;
+}
+#tourslist #filter {
+    float: right;
+    margin: 2.2em 33px 2em 30px;
+}
+#tourslist #filter span {
+    color: #676767;
+}
+#all-tours {
+    clear: left;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 1em 0;
+}
+
+p#links {
+	margin: 40px 0 0 0;
+}
+
+#basket {
+	margin: 0 30px 20px 30px;
+}
+#basket h2, #hotels h2 {
+	background-image: url('images/tours-title.png');
+	background-position: top left;
+	background-repeat: no-repeat;
+	width: 651px;
+	height: 53px;
+	margin: 0;
+	color: white;
+	padding: 14px 0 0 20px;
+	font-size: 180%;
+}
+#basket #unscheduled h3, #basket #days h3 {
+	color: #daaa02;
+	margin: 5px 0 10px 0;
+	font-size: 150%;
+}
+#basket #unscheduled, #basket #days {
+	margin-bottom: 20px;
+}
+#basket .unscheduledtour,#basket .day {
+	margin: 0;
+	padding: 8px 10px 8px 10px;
+}
+#basket #unscheduled .odd, #basket #days .odd {
+	background-color: white;
+}
+#basket #unscheduled .even, #basket #days .even {
+	background-color: #edebe9;
+}
+#basket #unscheduled .title, #basket #days .dayname {
+	padding: 0 0 5px 0;
+	font-weight: bold;
+}
+#basket #unscheduled select {
+	width: auto;
+}
+#basket #unscheduled table {
+	width: 100%;
+}
+#basket #unscheduled table tr.header {
+	border-bottom: 1px solid gray;
+}
+#basket #unscheduled label {
+	display: block;
+	float: left;
+	width: 140px;
+	margin: 2px 0;
+}
+#basket #unscheduled input.block {
+	display: block;
+	margin: 2px 0 4px 155px;
+}
+#basket #unscheduled #pay-by {
+	display: block;
+	margin: 2px 0 4px 155px;
+}
+#basket #unscheduled #pay-by select {
+	margin-bottom: 3px;
+}
+#basket #unscheduled textarea {
+	display: block;
+	margin: 2px 0 4px 155px;
+	height: 80px;
+	width: 400px;
+}
+#basket #unscheduled #requirements {
+	clear: left;
+}
+#basket #unscheduled #requirements textarea {
+	height: 200px;
+}
+#basket #unscheduled #nameinfo {
+	margin-bottom: 4px;
+}
+#basket #unscheduled #infoblock {
+	margin-top: 20px;
+}
+#basket #unscheduled #date {
+	margin: 2px 0 15px 155px;
+}
+#basket #unscheduled #pay-by-box {
+	clear: left;
+}
+
+
+#basket .note {
+	margin-top: 10px;
+	color: #676767;
+}
+
+#hotels {
+	margin: 0 30px 20px 30px;
+}
+#hotels .address {
+	color: #676767;
+}
+#hotels h3 {
+	margin: 5px 0 10px 0;
+}
+#hotels h3 a {
+	color: #195b8d;
+}
+#hotels h3 a:hover {
+	text-decoration: underline;
+}
+#hotels .description {
+	margin: 0 0 2px 0;
+}
+#hotels .links {
+	margin: 10px 0 10px 0;
+}
+#hotels #hotelform {
+	border: none;
+}
+#hotels .image {
+	float: left;
+	margin-right: 10px;
+}
+#hotels #list td {
+	padding-bottom: 10px;
+}
+#hotels #list h3 .stars {
+	margin-left: 10px;
+}
+
+#faq #links, #faq #list {
+	margin: 0 0 0 30px;
+}
+#faq #list {
+	padding-right: 40px;
+}
+#faq #list h3 {
+	color: #DAAA02;
+}
+#faq #list .toplink {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+#tickets #ticketscontent {
+	margin: 0 0 0 30px;
+	padding-right: 40px;
+}
+#tickets label {
+	display: block;
+	width: 150px;
+	float: left;
+}
+#tickets input, #tickets select {
+	display: block;
+	padding: 2px;
+	margin-bottom: 3px;
+}
+
+img#recommended {
+	display: block;
+    position: absolute;
+    top: -1px;
+    right: -2px;
+    z-index: 20;
+}
+
+#headerimg {
+	margin: 0;
+	height: 200px;
+	width: 100%;
+	}
+
+.narrowcolumn {
+	float: left;
+	padding: 0 0 20px 45px;
+	margin: 0px 0 0;
+	width: 450px;
+	}
+
+.widecolumn {
+	padding: 10px 0 20px 0;
+	margin: 5px 0 0 150px;
+	width: 450px;
+	}
+
+.post {
+	margin: 0 40px 0 30px;
+	}
+
+.post #generictitle {
+	margin: 0;
+	text-align: left;
+}
+
+.post hr {
+	display: block;
+	}
+
+
+.postmetadata {
+	clear: left;
+}
+
+#footer {
+	background-image: url('images/pata.jpg');
+	background-position: middle;
+	background-repeat: no-repeat;
+	padding: 0;
+	margin: 0 0 0 10px;
+	width: 943px;
+	height: 96px;
+	clear: both;
+	}
+
+#footer p {
+	font-family: Verdana, 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+	margin: 0 0 0 0;
+	padding: 33px 0 0 25px;
+	font-size: 110%;
+	color: gray;
+    line-height: 1.5em;
+	}
+	
+.contactform label {
+	display: block;
+	width: 140px;
+	float: left;
+	text-align: left;
+	
+}
+.contactform br {
+	display: none;
+}
+.contactform input {
+	display: block;
+	margin: 3px 0;
+	width: 400px;
+}
+.contactform textarea {
+	display: block;
+	margin: 3px 0;
+	width: 400px;
+	height: 200px;
+}
+.contactform #contactsubmit {
+
+}
+.contactform #note {
+	margin-top: 10px;
+	font-size: 85%;
+}
+
+#discounts {
+	padding: 10px;
+	position: absolute;
+	background: white;
+	border: 2px solid gray;
+	width: 550px;
+	display: none;
+	z-index: 100;
+}
+#discounts #discountsclose {
+	float: right;
+}
+#dlgoverlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	width: 100%;
+	height: 0px;
+	background-color: #000;
+	filter:alpha(opacity=0);
+	opacity: 0.0;
+}
+
+#transportationform {
+	border: none;
+}
+
+#langbox {
+    text-align: center; 
+    margin-top: 15px;
+}
+#langbox a {
+	margin-right: 5px;
+}
+#follow-us { text-align: center; font-weight: bold; }
+#follow-us img { position: relative; top: 3px; }
+
+#recommend {
+    text-align: center;
+    padding: 0 10px 0 10px;
+    position: absolute;
+    width: 230px;
+    bottom: 0;
+    _bottom: 280px;
+}
+#recommend h5 {
+    color: grey;
+    text-align: left;
+    font-size: 1.2em;
+    border-top: 1px solid #d0d0d0;
+    margin-top: 1.5em;
+    padding: 1.3em 0 0 .5em;
+    font-weight: normal;
+}
+#recommend p { margin-bottom: 2em; }
+/* End Structure */
+
+
+
+
+/* Begin Images */
+p img {
+	padding: 0;
+	max-width: 100%;
+	}
+
+/*	Using 'class="alignright"' on an image will (who would've
+	thought?!) align the image to the right. And using 'class="centered',
+	will of course center the image. This is much better than using
+	align="center", being much more futureproof (and valid) */
+
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+	}
+
+img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline;
+	}
+
+.alignright {
+	float: right;
+	}
+
+.alignleft {
+	float: left
+	}
+/* End Images */
+
+
+
+/* Begin Lists
+
+	Special stylized non-IE bullets
+	Do not work in Internet Explorer, which merely default to normal bullets. */
+/*
+html>body .entry ul {
+	margin-left: 0px;
+	padding: 0 0 0 30px;
+	padding-left: 10px;
+	text-indent: -10px;
+	} 
+
+html>body .entry li {
+	margin: 7px 0 8px 10px;
+	}
+
+.entry ul li:before, #sidebar ul ul li:before {
+
+	}
+*/
+.entry ol {
+	padding: 0 0 0 35px;
+	margin: 0;
+	}
+
+.entry ol li {
+	margin: 0;
+	padding: 0;
+	}
+
+.postmetadata ul, .postmetadata li {
+	display: inline;
+	list-style-type: none;
+	list-style-image: none;
+	}
+
+#sidebar ul, #sidebar ul ol {
+	margin: 0;
+	padding: 0;
+	}
+
+#sidebar ul li {
+	list-style-type: none;
+	list-style-image: none;
+	margin-bottom: 15px;
+	}
+
+#sidebar ul p, #sidebar ul select {
+	margin: 5px 0 8px;
+	}
+
+#sidebar ul ul, #sidebar ul ol {
+	margin: 5px 0 0 10px;
+	}
+
+#sidebar ul ul ul, #sidebar ul ol {
+	margin: 0 0 0 10px;
+	}
+
+ol li, #sidebar ul ol li {
+	list-style: decimal outside;
+	}
+
+#sidebar ul ul li, #sidebar ul ol li {
+	margin: 3px 0 0;
+	padding: 0;
+	}
+/* End Entry Lists */
+
+
+
+/* Begin Form Elements */
+#searchform {
+	margin: 10px auto;
+	padding: 5px 3px; 
+	text-align: center;
+	}
+
+#sidebar #searchform #s {
+	width: 108px;
+	padding: 2px;
+	}
+
+#sidebar #searchsubmit {
+	padding: 1px;
+	}
+
+
+select { /*width: 130px; */   }
+
+#commentform input {
+	width: 170px;
+	padding: 2px;
+	margin: 5px 5px 1px 0;
+	}
+
+#commentform textarea {
+	width: 100%;
+	padding: 2px;
+	}
+
+#commentform #submit {
+	margin: 0;
+	float: right;
+	}
+/* End Form Elements */
+
+
+
+/* Begin Comments*/
+.alt {
+	margin: 0;
+	padding: 10px;
+	}
+
+.commentlist {
+	padding: 0;
+	text-align: justify;
+	}
+
+.commentlist li {
+	margin: 15px 0 3px;
+	padding: 5px 10px 3px;
+	list-style: none;
+	}
+
+.commentlist p {
+	margin: 10px 5px 10px 0;
+	}
+
+#commentform p {
+	margin: 5px 0;
+	}
+
+.nocomments {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	}
+
+.commentmetadata {
+	margin: 0;
+	display: block;
+	}
+/* End Comments */
+
+
+
+/* Begin Sidebar */
+#sidebar
+{
+	padding: 20px 0 10px 0;
+	margin-left: 545px;
+	width: 190px;
+	}
+
+#sidebar form {
+	margin: 0;
+	}
+/* End Sidebar */
+
+
+
+/* Begin Calendar */
+#wp-calendar {
+	empty-cells: show;
+	margin: 10px auto 0;
+	width: 155px;
+	}
+
+#wp-calendar #next a {
+	padding-right: 10px;
+	text-align: right;
+	}
+
+#wp-calendar #prev a {
+	padding-left: 10px;
+	text-align: left;
+	}
+
+#wp-calendar a {
+	display: block;
+	}
+
+#wp-calendar caption {
+	text-align: center;
+	width: 100%;
+	}
+
+#wp-calendar td {
+	padding: 3px 0;
+	text-align: center;
+	}
+
+#wp-calendar td.pad:hover { /* Doesn't work in IE */
+	background-color: #fff; }
+/* End Calendar */
+
+
+
+
+
+/* Begin Various Tags & Classes */
+acronym, abbr, span.caps {
+	cursor: help;
+	}
+
+acronym, abbr {
+	border-bottom: 1px dashed #999;
+	}
+
+blockquote {
+	margin: 15px 30px 0 10px;
+	padding-left: 20px;
+	border-left: 5px solid #ddd;
+	}
+
+blockquote cite {
+	margin: 5px 0 0;
+	display: block;
+	}
+
+.center {
+	text-align: center;
+	}
+
+hr {  display: none; }
+
+a img {
+	border: none;
+	}
+
+p {
+	font-family: Verdana, 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+}
+.navigation {
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 60px;
+	}
+
+.related-links {
+    border-top: 1px solid #d0d0d0;
+
+}
+
+img.left-box {
+    float: left;
+    margin: 0 1em 1.5em 0;
+    border: 1px solid #d0d0d0;
+}
+
+.transportcontent {
+	margin: 0 0 0 30px;
+	padding-right: 40px;
+}
+
+.transport-type, .info-box { clear: left; }
+.transport-type p, .info-box p { margin: -0.7em 0 1.5em 195px; }
+.transport-type h3 a, .info-box h3 a, .info-box h3 { color: #114477; }
+.transport-type h3, .info-box h3 { margin: 0 0 1em 0; }
+.info-box h3 { *padding-top: .6em; }
+
+
+#transport #generictitle { margin-left: 30px !important; }
+#transport sup, #basket sup, #tickets sup { color: red; }
+#transport .infobox-top { margin-top: 2em; }
+#transport .infobox-bottom { margin-bottom: 2em; }
+#transport .infobox h2 { margin-top:0; }
+#transport .footnotes { margin-top: 1em; }
+#transport #cost-wrap { font-size: 1.2em; color: #333333; margin-top: 1em; }
+
+#czechtourism img { margin-bottom: .8em; }
+
+#basket label span { font-size: .8em; display: block; line-height: 1.5em; }
+#basket #required { clear: both; margin-top: 2em; }
+
+/*table.stylish { border-spacing: 1px; }
+table.stylish td, table.stylish th { background: #F8F0D2; padding: .2em .5em; }*/
+table.stylish { border-collapse: collapse; }
+table.stylish td, table.stylish th { padding: .4em .6em; border: 1px solid #d1cbc6; }
+table.stylish th { color: #195b8d; font-weight: bold; background-color: #F8F0D2; /*#F4E198; #ede6d3;*/ }
+table.stylish th span { font-weight: normal; }
+table.stylish td.em { background-color: #f8f7f6; font-weight: bold; }
+table.stylish td.empty { background: none; }
+table.form td, table.form th, form table td, form table th { vertical-align: top; text-align: left; }
+
+.submit-btn { font-size: 1.2em; font-weight: bold; padding: .5em 1em; margin: 0 auto; }
+.center { text-align: center }
+.right { text-align: right }
+
+/* End Various Tags & Classes*/
+
+
+.required { color: red; font-weight: bold; }
+.errors { background-color: #FFAAAA; padding: .5em 1em; }
+
+#add-link .copy-code { margin-bottom: 0 }
+
+#link-exchange ul, #link-exchange li { margin-left: 0; padding-left: 0; list-style-type: none; }
+#link-exchange li a { display: block; }
+#link-exchange li {margin-bottom: .6em }
+#link-exchange a.add-link { background: url('images/add.png') no-repeat left; padding-left: 25px; font-weight: bold; }
+#link-exchange h2 { border-top: 1px solid #676767; padding-top: .5em; }
+#link-exchange #link-list { border-bottom: 1px solid #676767; padding-bottom: 1.3em; }
+#link-exchange li img { border: 1px solid #DCDCDC; display: block; }
+
+#contact-page .infobox, #contact-page .infobox-top, #contact-page .infobox-bottom,
+#tickets .infobox, #tickets .infobox-top, #tickets .infobox-bottom 
+{ margin-left: 0; }
+#contact-page .infobox { padding-top: 1px; padding-bottom: 10px }
+
+#contact-page .submit { font-size: 1.4em; padding: .2em 1em }
+
+#paypal { margin-left: 36px; }
+
+#ticketform { margin-bottom: 1em }
+#ticketform h3 { margin-top: 0; }
+
+
+.english-only { margin: 45px 28px 0 28px; font-size: 1.2em; color: #DAAA02; line-height: 1.4em; }
+#czech #pane #menu ul { margin-top: 14px; }
+#czech #content { line-height: 1.6em; }
+
+
+#private-guides-table td { padding: 1em .5em; vertical-align: top; }
+
+.french-post #generictitle { font-size: 1.5em }
